@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;900&display=swap');
+* {
+    font-family: 'Nunito Sans';
+}
+
+.large-banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.logo-banner-centered {
+    width: 100px;
+    margin-bottom: 35px;
+}
+
+.large-banner .banner-image {
+    width: 100%;
+    filter: brightness(45%);
+    object-fit: cover;
+}
+
+.text-banner-wrapper {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    z-index: 1;
+}
+
+.jumbo-text-large-banner {
+    margin: 0;
+    font-size: 5em;
+    letter-spacing: 7px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.small-text-banner {
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;
+    font-weight: 600;
+}
+
+.medium-text-banner {
+    display: inline-block;
+    width: 60%;
+    margin-top: 3em;
+    font-size: 2em;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/*----------------------- Navbar -----------------------*/
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    padding: 0;
+    z-index: 1;
+}
+
+.navbar .navbar-wrapper {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px rgba(255, 255, 255, .6);
+}
+
+.navbar-wrapper ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-wrapper li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.navbar-wrapper a {
+    font-weight: 600;
+    color: rgba(255, 255, 255, .6);
+    transition: all ease-in-out 250ms;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    width: 100%;
+    height: 3px;
+    position: relative;
+    bottom: -19px;
+    background-color: orange;
+}
+
+.nav-link:hover::after {
+    visibility: visible;
+}
+
+/*----------------------- Our Company -----------------------*/
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.title-our-company {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.title-our-company:before {
+    content: '';
+    display: block;
+    margin-bottom: .5em;
+    width: 30%;
+    height: 5px;
+    background-color: orange;
+}
+
+.sub-title-our-company {
+    color: #fff;
+    margin-bottom: 1.5em;
+}
+
+.OurCompanySection {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80 750w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80 1050w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80 1350w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80 1500w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80 1650w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80 1950w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80 2100w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80 2250w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80 2550w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80 2700w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80 2850w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80 3150w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80 3300w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=3450&q=80 3450w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=3750&q=80 3750w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=3900&q=80 3900w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=4050&q=80 4050w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=4350&q=80 4350w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=4500&q=80 4500w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=4650&q=80 4650w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=4950&q=80 4950w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=5100&q=80 5100w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=5250&q=80 5250w, https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=5418&q=80 5418w');
+    background-size: cover;
+}
+
+.box-wrapper {
+    width: 100%;
+    margin: auto;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.box {
+    width: 370px;
+    padding: 1em;
+    margin-right: 1em;
+    border-top: solid 5px #000;
+    border-bottom: solid 5px #fff;
+    background-color: rgb(230, 189, 93);
+}
+
+.box-title h4 {
+    margin-bottom: 1em;
+    font-weight: 900;
+}
+
+.box-content {
+    display: inline-flex;
+    font-size: .8em;
+}
+
+.box-content img {
+    margin-right: 15px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn-box {
+    padding: .5em 1em;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: rgb(32, 173, 32);
+}
+
+/*----------------------- Our Products -----------------------*/
+
+.our-product-container {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1529511582893-2d7e684dd128?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80');
+    background-size: cover;
+}
+
+.box-wrapper-product {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px;
+    backdrop-filter: blur(60px);
+    display: flex;
+}
+
+.box-product {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    border-top: solid 7px #fff;
+    border-bottom: solid 7px #fff;
+}
+
+.box-product:not(:last-child) {
+    border-right: solid 7px #fff;
+}
+
+.box-product img {
+    height: 100%;
+    object-fit: cover;
+    object-position: -100px;
+}
+
+.our-product-title {
+    width: 70%;
+    margin: 50px 25px;
+}
+
+.our-product-title h4 {
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.our-product-title p {
+    margin-top: 1.5em;
+    font-size: .8em;
+    color: #fff;
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing: 1px;
+}
+
+.our-product-title:before {
+    content: '';
+    display: block;
+    margin-bottom: .5em;
+    width: 80%;
+    height: 5px;
+    background-color: #fff;
+}
